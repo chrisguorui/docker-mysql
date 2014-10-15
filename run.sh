@@ -24,8 +24,8 @@ else
   mysql -u root -e "CREATE USER 'monty'@'%' IDENTIFIED BY 'some_pass';"
   mysql -u root -e "GRANT ALL PRIVILEGES ON *.* TO 'monty'@'%' WITH GRANT OPTION;"
   mysql -u root -e "CREATE SCHEMA Stuff;"
-  mysql -u root -e "USE Stuff; CREATE TABLE stuff (id INT, data VARCHAR(100));"
-  mysql -u root -e "USE Stuff; INSERT INTO stuff VALUES (1, 'foo'); INSERT INTO stuff VALUES (2, 'bar');"
+#  mysql -u root -e "USE Stuff; CREATE TABLE stuffs (id INT, data VARCHAR(100), created_at datetime, updated_at datetime);"
+#  mysql -u root -e "USE Stuff; INSERT INTO stuffs VALUES (1, 'foo', null, null); INSERT INTO stuffs VALUES (2, 'bar', null, null);"
 
 fi
 
